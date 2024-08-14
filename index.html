@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Importaciones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS de DataTables -->
+    <link href="https://cdn.datatables.net/2.1.3/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/aduana.png" alt="aduana" width="60" height="44">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Registro de Empresas e Importaciones</h1>
+
+        <div class="mb-4">
+            <h2>Agregar Empresa</h2>
+            <div class="form-group">
+                <input type="text" id="idRegistro" class="form-control" placeholder="ID Registro">
+            </div>
+            <div class="form-group">
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre Empresa">
+            </div>
+            <div class="form-group">
+                <input type="rut" id="rut" class="form-control" placeholder="RUT">
+            </div>
+            <button class="btn btn-primary" id="btnAgregarEmpresa">Agregar Empresa</button>
+        </div>
+
+        <div class="mb-4">
+            <h2>Agregar Importación</h2>
+            <div class="form-group">
+                <input type="number" id="idImportacion" class="form-control" placeholder="ID Importación">
+            </div>
+            <div class="form-group">
+                <input type="text" id="producto" class="form-control" placeholder="Producto">
+            </div>
+            <div class="form-group">
+                <input type="number" id="numeroProductos" class="form-control" placeholder="Número de Productos">
+            </div>
+            <div class="form-group">
+                <input type="number" step="0.01" id="precioUnitario" class="form-control" placeholder="Precio Unitario">
+            </div>
+            <div class="form-group">
+                <label for="nombreEmpresa">Nombre Empresa</label>
+                <select id="nombreEmpresa" class="form-control">
+                    <option value="">Seleccione una empresa</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" id="btnAgregarImportacion">Agregar Importación</button>
+        </div>
+
+        <div id="sectionEmpresas"></div>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>&copy; GRUPO 1 - 2024 </p>
+        <p>Kevin Henriquez | Hernán Medina | Camila Palma | Bayron Sepulveda</p>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript de DataTables -->
+    <script src="https://cdn.datatables.net/2.1.3/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.3/js/dataTables.bootstrap5.js"></script>
+</body>
+
+</html>

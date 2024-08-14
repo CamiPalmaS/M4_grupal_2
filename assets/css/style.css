@@ -1,0 +1,15 @@
+.container {
+    max-width: 800px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #95bedd;
+}
+
+.table tfoot tr {
+    font-weight: bold;
+}
